@@ -10,7 +10,7 @@ breakfast = "steak and eggs"
 # Strings
 print("This is a string.")
 # String concatenation
-print("String 1" + "String 2")
+print("String 1" + " " + "String 2")
 # Multi-line strings
 three_line_string = """
 Line 1
@@ -32,6 +32,14 @@ print(len(a))
 print(a.lower())
 # upper() returns string in upper case
 print(a.upper())
+# replace() replaces a string with another string
+print(a.replace("Hello", "Goodbye"))
+# split() splits the string into substrings if it finds instances of the separator
+print(a.split(","))
+# Command-line string input
+print("Enter your name:")
+x = input()
+print("Hello, " + x)
 
 # Numbers
 # Integers
@@ -49,7 +57,7 @@ complex_example_two = 5j
 # 2. float()
 # 3. str()
 
-# Arithmetic (+, -, *, /)
+# Arithmetic (+, -, *, /, %, // - floor division)
 
 # Exponents (**)
 # 2 to the 10th power
@@ -59,6 +67,30 @@ print (2 ** 10)
 number_of_miles = 12
 number_of_miles += 2
 print(number_of_miles)
+
+# Bitwise operators
+a_operator = 60  # in binary, 0011 1100
+b_operator = 13  # in binary, 0000 1101
+# & operator - AND
+c_result = a & b  # if bit is shared, that bit remains -> if bit is different, defaults to 0
+                  # &-ing returns 1 only if both bits are 1
+                  # 0000 1100 => 12
+# | operator - OR
+c_result = a | b  # if either bit contains 1, resulting bit will equal 1
+                  # |-ing returns 0 only if both bits are 0
+                  # 0011 1101 => 61
+# ^ operator - eXclusive OR
+c_result = a ^ b  # returns 1 if one operand is 0 and another is 1, otherwise returns 0
+                  # 0011 0001 => 49
+# ~ operator - complement
+c_result = ~a  # take each binary and return its complement
+               # 1100 0011 => -61
+# << operator - left shift operator
+c_result = a << 2  # shift number of bits to left, x spaces
+                   # 1111 0000 => 240
+# >> operator - right shift operator
+c_result = a >> 2  # shift number of bits to right, x spaces
+                   # 0000 1111 => 15
 
 # Errors
 # - Python will point to error location with a ^ character
