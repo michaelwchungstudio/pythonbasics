@@ -68,6 +68,24 @@ number_of_miles = 12
 number_of_miles += 2
 print(number_of_miles)
 
+# Comparison operators (compare two values)
+# ==, !=, >, <, >=, <=
+
+# Logical operators (combine conditional statements)
+# and, or, not
+# and ex. x > 5 and x < 10
+# or ex. x < 5 or x > 10
+# not ex. not(x < 5 and x < 10)
+
+# Identity operators (compare the objects, not if they are equal, but if they are the same object with the same memory location)
+# is, is not
+
+# Membership operators (test if sequence is present in an object)
+# in, not in
+x = ["apple", "banana", "strawberry"]
+print("apple", "strawberry" not in x)  # returns false
+print("apple", "strawberry" in x)  # returns true
+
 # Bitwise operators
 a_operator = 60  # in binary, 0011 1100
 b_operator = 13  # in binary, 0000 1101
