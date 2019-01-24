@@ -1,5 +1,7 @@
-x = thislist = ["eggs", "bacon", "coffee"]
+thislist = ["eggs", "bacon", "coffee"]
+
+thislist.insert(1, "muffin")
+
+thislist.pop(1)
+
 print(thislist)
-print(thislist[1]) # prints 'bacon'
-thislist[1] = "toast"
-print(thislist) # prints ['eggs', 'toast', 'coffee']
