@@ -83,8 +83,8 @@ print(number_of_miles)
 # Membership operators (test if sequence is present in an object)
 # in, not in
 x = ["apple", "banana", "strawberry"]
-print("apple", "strawberry" not in x)  # returns false
-print("apple", "strawberry" in x)  # returns true
+print("strawberry" not in x)  # returns false
+print("strawberry" in x)  # returns true
 
 # Bitwise operators
 a_operator = 60  # in binary, 0011 1100
