@@ -42,6 +42,7 @@ numlist = [1, 2, 3]
 numlist.clear()
 print(numlist) # prints []
 ## Other methods
+# index(), search list for value and return first index where it is found
 # copy(), returns a copy of the list
 # extend(), add the elements of a list (or any iterable), to the end of a list
 # sort(), sort a list
@@ -52,3 +53,17 @@ cars = ['Mitsubishi', 'BMW', 'VW']
 def myFunc(e):
     return len(e)
 cars.sort(key=myFunc) # sorts into ['VW', 'BMW', 'Mitsubishi']
+
+## Tuples
+thistuple = ("Thing 1", "Thing 2", "Thing 3")
+# Accessing items, looping through, and checking if items exist in a tuple are the same as lists
+# The values in a tuple CANNOT be changed!
+# A value CANNOT be added to a tuple!
+# A value in a tuple CANNOT be removed!
+# del, can remove an entire tuple
+del thistuple
+## Other methods
+# count(), returns number of instances a value occurs in a tuple
+
+## Sets
+thisset = {""}
