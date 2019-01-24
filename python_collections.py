@@ -56,6 +56,8 @@ cars.sort(key=myFunc) # sorts into ['VW', 'BMW', 'Mitsubishi']
 
 ## Tuples
 thistuple = ("Thing 1", "Thing 2", "Thing 3")
+# The tuple() constructor
+construct_tuple = tuple(["apple", "banana", "orange"])
 # Accessing items, looping through, and checking if items exist in a tuple are the same as lists
 # The values in a tuple CANNOT be changed!
 # A value CANNOT be added to a tuple!
@@ -66,4 +68,22 @@ del thistuple
 # count(), returns number of instances a value occurs in a tuple
 
 ## Sets
-thisset = {""}
+thisset = {"PUBG", "Fortnite", "Call of Duty"}
+# The set() constructor
+construct_set = set(["apple", "banana", "orange"])
+# Sets are UNORDERED, so the items will appear in a random order
+# Cannot access items in a set by referring to an index
+# Looping through and checking if items exist in a set are the same as lists and tuples
+# Cannot change items in a set
+# Add an item
+thisset.add("Overwatch")
+# Add multiple items
+thisset.update(["Battlefield", "Guild Wars 2"])
+# Remove an item
+thisset.remove("Battlefield") # If the item does not exist, this will raise an error
+thisset.discard("Overwatch") # If the item does not exist, this will NOT raise an error
+qtest = thisset.pop() # Removes the last item; since sets are unordered, you will not know what item is removed
+# Clearing and deleting is the same as list and tuples
+# Other methods - check https://www.w3schools.com/python/python_sets.asp
+
+## Dictionaries
