@@ -1,7 +1,9 @@
-thislist = ["eggs", "bacon", "coffee"]
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
 
-thislist.insert(1, "muffin")
+del thisdict["model"]
 
-thislist.pop(1)
-
-print(thislist)
+print(thisdict)

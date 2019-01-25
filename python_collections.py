@@ -41,7 +41,7 @@ del thislist #thislist is deleted
 numlist = [1, 2, 3]
 numlist.clear()
 print(numlist) # prints []
-## Other methods
+## Other methods, https://www.w3schools.com/python/python_lists.asp
 # index(), search list for value and return first index where it is found
 # copy(), returns a copy of the list
 # extend(), add the elements of a list (or any iterable), to the end of a list
@@ -64,7 +64,7 @@ construct_tuple = tuple(["apple", "banana", "orange"])
 # A value in a tuple CANNOT be removed!
 # del, can remove an entire tuple
 del thistuple
-## Other methods
+## Other methods, https://www.w3schools.com/python/python_tuples.asp
 # count(), returns number of instances a value occurs in a tuple
 
 ## Sets
@@ -86,4 +86,40 @@ qtest = thisset.pop() # Removes the last item; since sets are unordered, you wil
 # Clearing and deleting is the same as list and tuples
 # Other methods - check https://www.w3schools.com/python/python_sets.asp
 
-## Dictionaries
+## Dictionaries, has keys and values (similar to objects in JavaScript!)
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+# The dict() constructor
+thisdict = dict(brand="Ford", model="Mustang", year="1964") # note that the keywords are NOT string literals
+# Access items, refer to the key, can use get()
+print(thisdict["model"])
+print(thisdict.get("model"))
+# Change value of an item by referring to the key
+thisdict["year"] = 2019
+# Looping through a dictionary
+# Accessing key names in a loop
+for key in thisdict:
+    print(key)
+# Accessing values in a loop, can use values()
+for key in thisdict:
+    print(thisdict[key]) 
+for value in thisdict.values():
+    print(value)
+# Accessing both keys and values using the items() function 
+# Second loop uses f-strings, https://realpython.com/python-f-strings/
+for x, y in thisdict.items():
+    print(x, y)
+for x, y in thisdict.items():
+    print(f"{x}: {y}")
+# Checking if an item exists is the same as a list
+if "model" in thisdict:
+    print("Yes, 'model' is one of the keys.")
+# Adding items
+thisdict["color"] = "red"
+# Removing items
+thisdict_model = thisdict.pop("model")
+del thisdict["color"]
+# Other methods, https://www.w3schools.com/python/python_dictionaries.asp
