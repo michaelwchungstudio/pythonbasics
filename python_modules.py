@@ -3,13 +3,14 @@
 # file containing a set of functions you want to include in your application
 # modules can be created by saving code into a file with the extension .py
 # modules can contain functions but also variables of all types (arrays, dictionaries, objects, etc.)
+# you can create an alias when importing a module, by using the 'as' keyword
 
 ## Using/importing a module
-import examplemodule
+import examplemodule as exmod
 
-examplemodule.greeting("Michael") # prints 'Hello, Michael'
-print(examplemodule.person1["name"]) # prints 'Michael'
-print(examplemodule.person1["age"]) # prints '26'
-print(examplemodule.person1["country"]) # prints 'USA'
+exmod.greeting("Michael") # prints 'Hello, Michael'
+print(exmod.person1["name"]) # prints 'Michael'
+print(exmod.person1["age"]) # prints '26'
+print(exmod.person1["country"]) # prints 'USA'
 
 
