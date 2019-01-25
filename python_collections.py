@@ -123,3 +123,8 @@ thisdict["color"] = "red"
 thisdict_model = thisdict.pop("model")
 del thisdict["color"]
 # Other methods, https://www.w3schools.com/python/python_dictionaries.asp
+# Misc.
+def print_attributes(**argz):
+    print(argz)
+
+print_attributes(a=123, b=456, c=789, d=10) # {'a': 123, 'b': 456, 'c': 789, 'd': 10}
