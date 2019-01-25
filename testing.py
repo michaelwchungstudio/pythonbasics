@@ -1,9 +1,6 @@
-def ex_recursion(x):
-    if(x > 0):
-        result = x + ex_recursion(x - 1)
-        print(result)
-    else:
-        result = 0
-    return result
-    
-ex_recursion(6)
+def mult_func(n):
+    return lambda a : a * n
+doubler = mult_func(2)
+tripler = mult_func(3)
+print(doubler(11))
+print(tripler(11))

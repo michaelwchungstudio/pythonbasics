@@ -1,5 +1,3 @@
-## ...
-
 ## Python functions
 # defined using 'def'
 # parameters are specified inside the parentheses
@@ -28,3 +26,14 @@ def ex_recursion(x):
 ex_recursion(6) # prints 1, 3, 6, 10, 15, 21
 
 ## Lamba functions
+# small anonymous function, can take any number of arguments, but can only have one expression
+# lambda arguments : expression
+tlam = lambda a, b, c : a + b + c
+print(tlam(1, 2, 3))
+# mostly used as an anonymous function inside another function
+def mult_func(n):
+    return lambda a : a * n
+doubler = mult_func(2)
+tripler = mult_func(3)
+print(doubler(11)) # prints 22
+print(tripler(11)) # prints 33
