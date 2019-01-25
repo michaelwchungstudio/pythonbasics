@@ -1,4 +1,6 @@
-def print_attributes(**argz):
-    print(argz)
-
-print_attributes(a=123, b=456, c=789, d=10)
+# And (&& in JavaScript!)
+a = 5
+b = 4
+c = 6
+if a > b and c > a:
+    print("c is greater than a, which is greater than b")
