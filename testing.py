@@ -1,9 +1,18 @@
-class Person:
-  def __init__(self, name, age):
-    self.name = name
-    self.age = age
+class MyNumbers:
+    def __iter__(self):
+        self.num = 1
+        return self
+    
+    def __next__(self):
+        if self.num <= 20:
+            x = self.num
+            self.num += 1
+            return x
+        else:
+            raise StopIteration
 
-p1 = Person("John", 36)
+numbers = MyNumbers()
+numiter = iter(numbers)
 
-print(p1.name)
-print(p1.age)
+for x in numiter:
+    print(x)
