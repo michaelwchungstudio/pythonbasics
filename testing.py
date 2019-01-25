@@ -1,6 +1,9 @@
-def mult_func(n):
-    return lambda a : a * n
-doubler = mult_func(2)
-tripler = mult_func(3)
-print(doubler(11))
-print(tripler(11))
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+p1 = Person("John", 36)
+
+print(p1.name)
+print(p1.age)
