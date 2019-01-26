@@ -27,7 +27,28 @@ import re
 # (), capture and group
 
 ## Special Sequences
+# Note: The 'r' in front tells Python the expression is a raw string. 
+# In a raw string, escape sequences are not parsed. 
+# For example, '\n' is a single newline character. But, r'\n' would be two characters: a backslash and an 'n'.
+#
+# \A, returns a match if the specified characters are at the beginning of the string
+    # ex. "\AThe"
+# \b, returns a match where the specified characters are at the beginning or at the end of a word
+    # ex. r"\bain", checks if 'ain' is at the beginning of any words
+    # ex. r"ain\b", checks if 'ain' is at the end of any words
+# \B, returns a match where the specified characters are PRESENT but NOT at the beginning or end of a word
+    # ex. r"\Bain", checks if 'ain' is found but also NOT at the beginning of any words
+    # ex. r"ain\B", checks if 'ain' is found but also NOT at the end of any words
+# \d, if string contains digits (0 - 9)
+# \D, opposite of \d
+# \s, if string contains white space character
+# \S, opposite of \s
+# \w, returns match where string contains any word characters (a to Z, 0 - 9, _)
+# \W, opposite of \w
+# \Z, returns match if characters are at the end of the string
+    # ex. "Spain\Z"
 
+## Sets
 
 
 
