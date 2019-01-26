@@ -12,6 +12,22 @@ import re
     # ex. "\d", "\A", etc.
 # ., any character (except newline character)
     # ex. "he..o"
+# ^, starts with
+    # ex. "^hello"
+# $, ends with
+    # ex. "world$"
+# *, zero or more occurrences
+    # ex. "aix*"
+# +, one or more occurrences
+    # ex. "aix+"
+# {}, exactly the specified number of occurrences
+    # ex. "al{2}"
+# |, either or
+    # ex. "falls|stays"
+# (), capture and group
+
+## Special Sequences
+
 
 
 
