@@ -1,18 +1,11 @@
-class MyNumbers:
-    def __iter__(self):
-        self.num = 1
-        return self
-    
-    def __next__(self):
-        if self.num <= 20:
-            x = self.num
-            self.num += 1
-            return x
-        else:
-            raise StopIteration
+import re
 
-numbers = MyNumbers()
-numiter = iter(numbers)
+txt = "The rain in Spain"
+x = re.search("^The.*Spain$", txt)
 
-for x in numiter:
-    print(x)
+print(x)
+
+if (x):
+  print("YES! We have a match!")
+else:
+  print("No match")
