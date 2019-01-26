@@ -28,3 +28,10 @@ ex_pyth_obj = {
 }
 print(json.dumps(ex_pyth_obj))
 
+## Formatting
+# json.jumps() has parameters to format the results
+# 1. 'indent' parameter
+# 2. 'separators' parameter
+# ex. below uses ". " to separate objects, and " = " to separate keys from values
+# 3. 'sort_keys' parameter
+print(json.dumps(ex_pyth_obj, indent=4, separators=(". ", " = "), sort_keys=True))
