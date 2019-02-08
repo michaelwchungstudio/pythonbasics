@@ -131,9 +131,10 @@ for k, v in s:
 d.items()
 # [('blue', [2, 4], ('red', [1]), ('yellow', [1, 3]))]
 
-## Grouping with dictionaries - Part I
+## Grouping with dictionaries
 names = ['raymond', 'rachel', 'matthew', 'roger', 'betty', 'melissa', 'judith', 'charlie']
 
+# key can be any value you need to group by! ex. key = name[0], key = name.count('a')
 d = {}
 for name in names:
     key = len(name)
@@ -142,11 +143,24 @@ for name in names:
     d[key].append(name)
 # {5: ['roger', 'betty'], 6: ['rachel', 'judith'], 7: ['raymond', 'matthew', 'melissa', 'charlie']}
 
+# Using setdefault -> if the key does not exist in the dictionary yet, set to default value (second parameter)
+d = {}
+for name in names:
+    key = len(name)
+    d.setdefault(key, []).append(name)
 
+# Use defaultdict!
+d = defaultdict(list)
+for name in names:
+    key = len(name)
+    d[key].append(name)
 
+## Is a dictionary popitem() atomic?
+# popitem() returns an arbitrary key, value pair from a dictionary
+d = {'matthew': 'blue', 'rachel': 'green', 'raymond': 'red'}
 
-
-
+while d:
+    key, value = d.popitem()
 
 
 
