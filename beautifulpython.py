@@ -161,6 +161,17 @@ d = {'matthew': 'blue', 'rachel': 'green', 'raymond': 'red'}
 
 while d:
     key, value = d.popitem()
+    print(key, '-->', value)
+
+## Linking dictionaries
+# Chainmap
+# Too complex for now - 30:00 in video!
+
+
+
+
+
+
 
 
 
